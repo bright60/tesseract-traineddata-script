@@ -113,7 +113,8 @@ rem ping 127.0.0.1 -n 5000 > nul
 echo/
 echo Error:
 echo You have to have one parameter as font name:
-echo Usage: %0 test2
+echo Usage: %0 fontname
+echo For example: %0 test2
 echo/
 
 :end
