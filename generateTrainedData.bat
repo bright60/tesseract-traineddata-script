@@ -62,10 +62,12 @@ echo ----------------------
 echo Generate font_properties ...
 echo %prefix_name% 1 0 0 1 0 > font_properties
 
-echo/
-echo ----------------------
-echo shapeclustering -F font_properties -U unicharset %prefix_name%.tr
-shapeclustering -F font_properties -U unicharset %prefix_name%.tr
+rem https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract-3.03%E2%80%933.05#training-procedure
+rem shapeclustering should not normally be used except for the Indic languages
+rem echo/
+rem echo ----------------------
+rem echo shapeclustering -F font_properties -U unicharset %prefix_name%.tr
+rem shapeclustering -F font_properties -U unicharset %prefix_name%.tr
 
 echo/
 echo ----------------------
