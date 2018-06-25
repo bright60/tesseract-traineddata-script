@@ -15,7 +15,7 @@ The download url: https://sourceforge.net/projects/vietocr/files/jTessBoxEditor/
 
 jTessBoxEditor is a box editor and trainer for Tesseract OCR, providing editing of box data of both Tesseract 2.0x and 3.0x formats and full automation of Tesseract training. It can read images of common image formats, including multi-page TIFF. The program requires Java Runtime Environment 7 or later.
 
-jTessBoxEditorFX is jTessBoxEditor rewritten in JavaFX to address the existing issue of rendering complex scripts in Java Swing. It requires JRE 8u40 or later.
+jTessBoxEditorFX is jTessBoxEditor rewritten in JavaFX to address the existing issue of rendering complex scripts in Java Swing. It requires JRE 8u40 or later. (jTessBoxEditorFX is not stable right now, dont' use it....)
 
 3. copy generateTrainedData.bat to the same folder whihc contains images and .tif files
 
