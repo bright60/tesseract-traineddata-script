@@ -41,8 +41,11 @@ echo Trained data prefix name: "%prefix_name%"
 echo/
 echo ----------------------
 
-echo tesseract.exe %prefix_name%.tif %prefix_name% batch.nochop makebox  
-tesseract.exe %prefix_name%.tif %prefix_name% batch.nochop makebox  
+echo Please make sure you have generated .box file before running this script ...
+
+rem running this command to create .box file first
+rem echo tesseract.exe %prefix_name%.tif %prefix_name% batch.nochop makebox  
+rem tesseract.exe %prefix_name%.tif %prefix_name% batch.nochop makebox  
 
 echo/
 echo ----------------------
