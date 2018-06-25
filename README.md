@@ -17,12 +17,20 @@ jTessBoxEditor is a box editor and trainer for Tesseract OCR, providing editing 
 
 jTessBoxEditorFX is jTessBoxEditor rewritten in JavaFX to address the existing issue of rendering complex scripts in Java Swing. It requires JRE 8u40 or later. (jTessBoxEditorFX is not stable right now, dont' use it....)
 
-3. copy generateTrainedData.bat to the same folder whihc contains images and .tif files
+3. Generate .box file based on .tif file before running generateTrainedData.bat, such as:
 
-4. run the script with font name, such as:
+tesseract.exe  test2.tif  test2  batch.nochop  makebox  
+
+4. Edit .box file using jTessBoxEditor
+just open .tif file in jTessBoxEditor...
+
+5. copy generateTrainedData.bat to the same folder whihc contains images and .tif files
+
+6. run the script with font name, such as:
 
 generateTrainedData.bat test2
 
+===================================================
 Issue:
 1. If jTessBoxEditor cann't recognize on the one of page of tif in jTessBoxEditor, then just open .box file, and copy some of lines to specify page, and rename the last number of line as page number, which can't be recognized.
 
